@@ -1,0 +1,19 @@
+{
+  "name": "aws-webserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:proxy": "docker-compose -f ./proxy/docker-compose.yml up -d" ,
+    "start:website1": "docker-compose -f ./website1/docker-compose.yml up -d" ,
+    "start:website2": "docker-compose -f ./website2/docker-compose.yml up -d" ,
+    "stop:proxy": "docker-compose -f ./proxy/docker-compose.yml down" ,
+    "stop:website1": "docker-compose -f ./website1/docker-compose.yml down" ,
+    "stop:website2": "docker-compose -f ./website2/docker-compose.yml down" ,
+    "reload:proxy": "docker exec -d proxy service nginx reload"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

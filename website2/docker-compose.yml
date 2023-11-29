@@ -1,0 +1,9 @@
+version: '2'
+services:
+ app:
+  image: nginx
+  container_name: website2_app
+  volumes:
+   - .:/usr/share/nginx/html
+  ports:
+   - "80"
