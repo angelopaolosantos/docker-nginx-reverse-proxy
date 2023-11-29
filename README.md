@@ -1,6 +1,6 @@
-# AWS Webserver
+# docker-nginx-reverse-proxy
 
-AWS Webserver is a simple web server to use on any system with Docker installed. An NGINX docker image is used as a reverse proxy for multiple web app containers.
+docker-nginx-reverse-proxy is a simple web server to use on any system with Docker installed. An NGINX docker image is used as a reverse proxy for multiple web app containers.
 
 ## Requirements
 
